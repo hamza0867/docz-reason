@@ -19,6 +19,6 @@ yarn ts:watch
 yarn dev
 ```
 
-__Important: __ 
-  - __Do **NOT** run the bucklescript watcher, it will just remove some important changes made to make this repo work.
+__Important:__
+  - Do **NOT** run the bucklescript watcher, it will just remove some important changes made to make this repo work.
   - It is preferrable to launch the dev server with every change to the source files because docz cache handling doesn't work well and provides some weird results at times
