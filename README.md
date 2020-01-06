@@ -7,18 +7,26 @@ The [Props component](https://www.docz.site/docs/built-in-components#component-p
 
 To know what worked for me and what didn't please take a look at the `src/components/Alert.tsx` file.
 
+## Setup the project
+
+```sh
+git clone https://github.com/hamza0867/docz-reason.git && cd docz-reason
+yarn install
+```
 
 ## Start typescript watcher
 
 ```sh
 yarn ts:watch
 ```
-## Run dev server
+## Run docz documentation
 
 ```sh
 yarn dev
 ```
+To see the Alert component you can search for it in the searh menu in the top left corner like shown below:  
 
+![search for component Alert](/images/search-Alert.png)
 __Important:__
   - Do **NOT** run the bucklescript watcher, it will just remove some important changes made to make this repo work.
   - It is preferrable to launch the dev server with every change to the source files because docz cache handling doesn't work well and provides some weird results at times
