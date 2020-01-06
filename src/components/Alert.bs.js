@@ -7,16 +7,15 @@ function Alert(Props) {
   return React.createElement("div", undefined, text);
 }
 
-function alert(Props) {
-  var text = Props.text;
-  return React.createElement("div", undefined, text);
-}
+var make = Alert;
 
-function Make(Props) {
-  var text = Props.text;
-  return React.createElement("div", undefined, "Make: " + text);
-}
+export {
+  Alert
+  // uncommenting the next line breaks the props parsing by docz
+  // make
+};
 
-export { Alert, alert, Make };
-export default Alert;
+// Uncommenting the next line does not break props parsing by docz
+// export { make };
+
 /* react Not a pure module */
