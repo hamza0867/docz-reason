@@ -11,7 +11,11 @@ export interface AlertProps {
 }
 
 // This works
-export const Alert: SFC<AlertProps> = AlertBS.Alert;
+ export const Alert: SFC<AlertProps> = AlertBS.Alert;
+
+// This also works but the exported default member in .bs.js file has to match the name of the file.
+// In this case it should be in the .bs.js file: export default Alert. Any other name won't work
+// export const Alert: SFC<AlertProps> = AlertBS.default;
 
 // The next line doesn't work, so it appears the name of the component has to match the file it is declared in.
 // export const Alert: SFC<AlertProps> = AlertBS.Make;

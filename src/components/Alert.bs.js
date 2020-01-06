@@ -18,4 +18,5 @@ function Make(Props) {
 }
 
 export { Alert, alert, Make };
+export default Alert;
 /* react Not a pure module */
