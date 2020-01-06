@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { SFC } from "react";
 
-// It is mandatory to have .d.ts file for the generated .bs.js file by bucklescript
 import * as AlertBS from "./Alert.bs";
 
 // using require doesn't work;
